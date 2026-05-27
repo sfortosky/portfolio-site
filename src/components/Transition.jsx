@@ -1,24 +1,26 @@
 ﻿import React from 'react';
-import { BookOpen, Code2, GraduationCap, Laptop } from 'lucide-react';
+import {BookOpen, ChevronDown, Code2, GraduationCap, Laptop} from 'lucide-react';
+import {Link} from "react-scroll";
 
 const Transition = () => {
     const milestones = [
         {
             year: "2018 - 2024",
-            title: "The Educator Era",
-            desc: "Six years of full-time teaching. Mastering complex system communication and pedagogical logic.",
+            title: "Educator",
+            desc: "Six years of full-time teaching in Saskatoon. Served as school technology lead. ",
             icon: <BookOpen className="text-accent" />,
         },
         {
             year: "2024 - 2026",
-            title: "Systems Transition",
-            desc: "Deep-diving into Computer Systems Technology. Bridging the gap between human and machine logic.",
+            title: "Student",
+            desc: "Attended the Computer Systems Technology program at Saskatchewan Polytechnic. " +
+                "Deployed multiple projects and developed proficiency in software, web, and app development.",
             icon: <GraduationCap className="text-accent" />,
         },
         {
             year: "Present",
-            title: "Full-Stack Engineer",
-            desc: "Building AI-integrated solutions (RAG pipelines, SQLite, FastAPI) with a focus on education tech.",
+            title: "Developer",
+            desc: "Working as a freelance developer. Continuing to learn through work on contracts and passion projects.",
             icon: <Laptop className="text-accent" />,
         }
     ];

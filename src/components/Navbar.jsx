@@ -5,8 +5,9 @@ import { Sun, Moon, Terminal } from 'lucide-react';
 const Navbar = ({ darkMode, setDarkMode }) => {
     const navLinks = [
         { name: 'About', target: 'about' },
+        { name: 'Stack', target: 'stack'},
         { name: 'Projects', target: 'projects' },
-        { name: 'Leadership', target: 'leadership' },
+        { name: 'Community', target: 'community' },
         { name: 'Contact', target: 'contact' },
     ];
 
@@ -15,10 +16,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <div className="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
 
                 {/* Logo / Brand */}
-                <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-white cursor-pointer">
-                    <Terminal size={20} className="text-accent" />
-                    <span className="tracking-tight">Sean<span className="text-accent">.dev</span></span>
-                </div>
+                <Link to="home" smooth={true} duration={500} offset={-70}>
+                    <div className="flex items-center gap-2 font-bold text-slate-900 dark:text-white cursor-pointer">
+                        <Terminal size={20} className="text-accent" />
+                        <span className="tracking-tight">
+                            Sean <span className="text-accent">Fortosky</span>
+                        </span>
+                    </div>
+                </Link>
 
                 {/* Navigation Links */}
                 <div className="flex items-center gap-8">

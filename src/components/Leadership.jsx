@@ -6,27 +6,27 @@ const Leadership = () => {
         {
             title: "Team Canada Athlete",
             org: "Ultimate Canada",
-            desc: "Represented Canada in international competition, requiring peak discipline, team synergy, and performance under pressure.",
+            desc: "Represented Team Canada at World Championship events in the sport of ultimate frisbee.",
             icon: <Globe className="text-accent" />
         },
         {
-            title: "League Administrator",
-            org: "Local Sports Club",
-            desc: "Managing a stats-based league and overseeing operations for youth and adult clinics.",
+            title: "Coach/Clinician",
+            org: "Saskatoon Ultimate Disc-sport Society",
+            desc: "Offered learn-to-play and competitive ultimate frisbee programming for adult and junior athletes.",
             icon: <Users className="text-accent" />
         },
         {
-            title: "Performance Coach",
-            org: "Youth & Adult Clinics",
-            desc: "Leveraging my background in Kinesiology and Education to develop technical skills and team culture.",
+            title: "League Administrator",
+            org: "Saskatoon Ultimate Disc-sport Society",
+            desc: "Co-creator and commissioner of local stats-based ultimate frisbee league.",
             icon: <Trophy className="text-accent" />
         }
     ];
 
     return (
-        <section id="leadership" className="py-24 px-6 bg-slate-50 dark:bg-slate-900/50 transition-colors">
+        <section id="community" className="py-24 px-6 bg-slate-50 dark:bg-slate-900/50 transition-colors">
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold dark:text-white mb-12">Leadership & <span className="text-accent">Community</span></h2>
+                <h2 className="text-3xl font-bold dark:text-white mb-12">Community & <span className="text-accent">Leadership</span></h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {roles.map((role, index) => (

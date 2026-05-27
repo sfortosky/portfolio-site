@@ -13,11 +13,12 @@ const Footer = () => {
                     {/* Left Side: Call to Action */}
                     <div>
                         <h2 className="text-4xl font-bold dark:text-white mb-6">
-                            Let's build something <br />
-                            <span className="text-accent">impactful.</span>
+                            Looking for
+                            <span className="text-accent"> work.</span>
                         </h2>
                         <p className="text-slate-600 dark:text-slate-400 max-w-sm mb-8">
-                            Whether you're looking for a full-stack developer, a technical lead, or just want to talk about AI in education.
+                            If you think I'd be a good fit for your organization,
+                            please don't hesitate to reach out!
                         </p>
                         <a
                             href="mailto:your-email@example.com"
@@ -31,10 +32,10 @@ const Footer = () => {
                     {/* Right Side: Links & Context */}
                     <div className="flex flex-col md:items-end justify-between">
                         <div className="flex gap-6 mb-8">
-                            <a href="#" className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:text-accent transition-colors">
+                            <a href="https://github.com/sfortosky" className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:text-accent transition-colors">
                                 <Github size={24} />
                             </a>
-                            <a href="#" className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:text-accent transition-colors">
+                            <a href="https://www.linkedin.com/in/sean-fortosky-b632333a8" className="p-3 rounded-full bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400 hover:text-accent transition-colors">
                                 <Linkedin size={24} />
                             </a>
                         </div>

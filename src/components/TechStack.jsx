@@ -1,5 +1,4 @@
 ﻿import React from 'react';
-import QuickFacts from "./QuickFacts.jsx";
 
 const SkillGroup = ({ title, skills }) => (
     <div className="space-y-4">
@@ -19,20 +18,19 @@ const SkillGroup = ({ title, skills }) => (
 
 const TechStack = () => {
     const stack = {
-        Frontend: ["React", "JavaScript", "Tailwind CSS", "HTML5/CSS3"],
-        Backend: ["Python", "FastAPI", "Node.js", "C#", "Java"],
-        Data: ["SQLite", "ChromaDB", "SQL Server", "RAG Pipelines"],
-        Tools: ["Git", "Docker", "Vite", "Postman"]
+        Languages: ["Python", "Javascript", "C#", "HTML", "CSS"],
+        Frontend: ["React", "Tailwind"],
+        Backend: ["FastAPI", "Node.js"],
+        Testing: ["Cypress (E2E)"],
+        Data: ["SQLite", "ChromaDB"],
+        VersionControl: ["Git"]
     };
 
     return (
-        <section id="skills" className="py-24 px-6 bg-white dark:bg-slate-950">
+        <section id="stack" className="py-24 px-6 bg-white dark:bg-slate-950">
             <div className="max-w-6xl mx-auto">
                 <h2 className="text-3xl font-bold dark:text-white mb-4">Tech <span className="text-accent">Stack</span></h2>
-                <p className="text-slate-500 mb-12">Tools and technologies I use to bring ideas to life.</p>
-
-                {/* Quick Facts Integrated Here */}
-                <QuickFacts />
+                <p className="text-slate-500 mb-12">Some of the tools and technologies I've been using.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     {Object.entries(stack).map(([category, skills]) => (
