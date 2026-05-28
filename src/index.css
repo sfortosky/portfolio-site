@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-accent: #38bdf8;
   --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.3);

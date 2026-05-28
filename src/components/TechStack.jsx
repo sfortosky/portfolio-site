@@ -34,7 +34,7 @@ const TechStack = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     {Object.entries(stack).map(([category, skills]) => (
-                        <SkillGroup key={category} title={category} skills={skills} />
+                        <SkillGroup key={category} title={category === "VersionControl" ? "Version Control" : category} skills={skills} />
                     ))}
                 </div>
             </div>

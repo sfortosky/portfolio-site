@@ -3,20 +3,21 @@
 export const projectList = [
     {
         id: "ai-tutor",
-        title: "AI Tutoring Ecosystem",
-        description: "A RAG-powered tutoring application integrated with an LMS. Generates file-specific study tools using vector embeddings and custom pipelines.",
+        title: "AI Tutor App",
+        description: "An AI-powered tutoring application that generates study tools from uploaded educational content. " +
+            "Powered by Ollama Gemma3n and custom Haystack pipelines.",
         tech: ["React", "FastAPI", "Haystack", "ChromaDB", "SQLite"],
-        codeLink: "https://github.com/your-repo",
-        demoLink: "https://your-demo.com",
+        codeLink: "https://github.com/sfortosky/AI-Tutor-App",
+        demoLink: "#",
         icon: Cpu
     },
-    {
-        id: "sports-stats",
-        title: "Stat-Track League Manager",
-        description: "A data-driven administration tool for sports leagues. Handles player stats, clinic scheduling, and automated reporting.",
-        tech: ["C#", "ASP.NET", "SQL Server", "Tailwind"],
-        codeLink: "https://github.com/your-repo",
-        demoLink: "https://your-demo.com",
-        icon: Database
-    }
+    // {
+    //     id: "sports-stats",
+    //     title: "Stat-Track League Manager",
+    //     description: "A data-driven administration tool for sports leagues. Handles player stats, clinic scheduling, and automated reporting.",
+    //     tech: ["C#", "ASP.NET", "SQL Server", "Tailwind"],
+    //     codeLink: "https://github.com/your-repo",
+    //     demoLink: "https://your-demo.com",
+    //     icon: Database
+    // }
 ];

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Transition from './components/Transition';
@@ -10,18 +10,20 @@ import TechStack from "./components/TechStack.jsx";
 function App() {
     const [darkMode, setDarkMode] = useState(true);
 
+    useEffect(() => {
+        document.documentElement.classList.toggle('dark', darkMode);
+    }, [darkMode]);
+
     return (
-        <div className={darkMode ? 'dark' : ''}>
-            <main className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
-                <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-                <Hero />
-                <Transition />
-                <TechStack />
-                <Projects />
-                <Leadership />
-                <Footer />
-            </main>
-        </div>
+        <main className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
+            <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+            <Hero />
+            <Transition />
+            <TechStack />
+            <Projects />
+            <Leadership />
+            <Footer />
+        </main>
     );
 }
 

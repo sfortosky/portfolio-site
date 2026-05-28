@@ -6,10 +6,10 @@ const Hero = () => {
     return (
         <section id="home" className="min-h-screen flex flex-col justify-center items-center px-6 pt-16 bg-white dark:bg-slate-950 transition-colors duration-300">
             <div className="text-center max-w-4xl">
-        {/*        /!* Subtle badge *!/*/}
-        {/*        <span className="inline-block py-1 px-3 rounded-full bg-accent/10 text-accent text-xs font-mono mb-6 border border-accent/20">*/}
-        {/*  Teacher turned software developer*/}
-        {/*</span>*/}
+                {/*        /!* Subtle badge *!/*/}
+                {/*        <span className="inline-block py-1 px-3 rounded-full bg-accent/10 text-accent text-xs font-mono mb-6 border border-accent/20">*/}
+                {/*  Teacher turned software developer*/}
+                {/*</span>*/}
 
                 {/* Main Headline */}
                 <h1 className="text-8xl md:text-8xl font-extrabold text-slate-900 dark:text-white tracking-mid mb-6">
@@ -38,15 +38,17 @@ const Hero = () => {
                         target="_blank"
                         className="flex items-center gap-2 px-8 py-3 border border-slate-200 dark:border-slate-800 dark:text-white rounded-full font-semibold hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors"
                     >
-                        <FileText size={18} />
+                        <FileText size={18}/>
                         Resume
                     </a>
                 </div>
 
                 {/* Social Links */}
                 <div className="flex gap-6 mt-12 justify-center text-slate-400">
-                    <a href="https://github.com/sfortosky" className="hover:text-accent transition-colors"><Github size={24} /></a>
-                    <a href="https://www.linkedin.com/in/sean-fortosky-b632333a8" className="hover:text-accent transition-colors"><Linkedin size={24} /></a>
+                    <a href="https://github.com/sfortosky" className="hover:text-accent transition-colors"><Github
+                        size={24}/></a>
+                    <a href="https://www.linkedin.com/in/sean-fortosky-b632333a8"
+                       className="hover:text-accent transition-colors"><Linkedin size={24}/></a>
                 </div>
             </div>
 
